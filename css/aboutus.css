@@ -1,23 +1,4 @@
-
- /* Imagen de portada - Index */
-
-.hero-image{
-    background-image: url("../img/background-about-us.jpg");
-    min-height: 100vh !important;
-}
-
-.hero-image .texto-principal{
-	padding-top: 5%;
-}
-
-
-/* Color text */
-
-.text-white{
-	color: white;
-}
-
-/* Arreglos */
+/*------------HEADER NAV------------*/
 .navbar{
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -31,6 +12,28 @@
 .navbar-toggle .icon-bar{
 	background-color: gray;
 }
+
+nav ul li {
+    margin-right: 14px;
+}
+nav ul li a{
+    color: #002366;
+}
+
+.quote-rotate img {
+    transform:  rotate(180deg);
+}
+/*-------------IMAGE INDEX-------------*/
+.hero-image{
+    background-image: url("../img/background-about-us.jpg");
+    min-height: 100vh !important;
+}
+
+.hero-image .texto-principal{
+    padding-top: 5%;
+}
+
+/*----------UTILITIES--------------*/
 .row {
     margin-right: 0px;
     margin-left: 0px; 
@@ -53,21 +56,12 @@
 .mgb-3{
     margin-bottom: 3%;
 }
+.mgb-10{
+    margin-bottom: 10%;
+}
 section{
     padding-top: 70px;
 }
-@media only screen and (max-width: 768px) {
-    #img-header{
-       /* padding-left: 55%;*/
-
-    }
-}
-@media (max-width: 480px) {
-    #img-header{
-       /* padding-left: 48%;*/
-    }
-}
-
 
 @media (max-width: 320px) {
     #button{
@@ -94,8 +88,7 @@ section{
         font-size: 22px;
     }
     #img-header{
-        padding-left: 30%;
-        
+        padding-left: 33%;
     }
     #title{
         font-size: 33px;
@@ -122,47 +115,74 @@ section{
         display: block;
     }
 }
-
+/*------------ BUTTONS ------------*/
 .b-sty{
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;  
     font-size: 22px;
  }
- .read{
+.b-sty:hover{
+    background-color: #179AD6;
+    border: none;
+    border-radius: 3px;
+    font-size: 22px;
+}
+.read{
     background-color: #002366;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
- }
- .apply{
+}
+.apply{
     background-color: #179AD6;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 66%
- }
-
-
- .contact-form{
+    width: 66%;
+}
+.apply:hover {
+    background-color: white;
+    color: #002366;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 66%;
+}
+.contact-form{
     background-color: transparent;
     border: 1px solid white;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 66%
+    width: 66%;
  }
- .careers{
+ .contact-form a {
+    text-decoration: none;
+    color: white;
+ }
+ .contact-form:hover{
+    border: 1px solid #179AD6;
+ }
+
+.careers{
     background-color: #179AD6;
     padding-left: 4%;
     padding-right: 4%;
     margin-top: 3%;
     margin-bottom: 5%;
- }
-
+}
+.careers:hover {
+    background-color: #002366;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
 .img-founder{
     width: 100%;
 }
@@ -174,6 +194,9 @@ section{
 }
 
 /*Footer*/
+footer {
+    border-top: 1px solid #f6f6f6;
+}
 .contact a{
     font-size: 18px;
 }

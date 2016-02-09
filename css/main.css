@@ -42,18 +42,21 @@ p {
 	/*font-size: 14px;*/
 	font-size: 0.875em;
 }
-#sentient-description .quote {
-	/*font-size: 24px; size from brief*/
-	font-size: 1.563em;
-	font-family: "ProximaNova-Light";
-    margin: 9% 0;
+.text-blue {
+	color: #002366;
 }
-#sentient-description .text-box {
-	/*font-size: 14px;*/
-	font-size: 0.875em;
-	margin: 0 6%;
+.text-skyblue {
+	color: #002366;
 }
-
+.text-gray {
+	color: #606060;
+}
+.text-white{
+	color: white;
+}
+.text-justify {
+	text-align: justify;
+}
 /*--------------- SECTION BANNER -------------*/
 
 #banner {
@@ -69,10 +72,13 @@ p {
 }
 @media screen and (max-width: 480px) {
 	#banner {
-		padding-top: 25%;
+		padding-top: 50%;
 	}
 	.arrow-down {
 		margin-bottom: 10%;
+	}
+	#sentient-description .quote {
+    margin-bottom: 22%;
 	}
 }
 
@@ -92,7 +98,13 @@ p {
 	padding: 0 16%;
 	margin-top: 9%;
 }
-
+.links a {
+	text-decoration: none;
+}
+.links a .home-links:hover {
+	text-decoration: none;
+	background-color: #F6F6F6;
+}
 @media screen and (max-width: 480px) {
     .links {
     	padding: 10% 0;
@@ -101,6 +113,18 @@ p {
     	margin-top: 10%;
     }
 }
+#sentient-description .quote {
+	/*font-size: 24px; size from brief*/
+	font-size: 1.563em;
+	font-family: "ProximaNova-Light";
+    margin: 9% 0;
+}
+#sentient-description .text-box {
+	/*font-size: 14px;*/
+	font-size: 0.875em;
+	margin: 0 6%;
+}
+
 /*------------- SECTION CONTACT-US ----------*/
 #contact-us {
 	background: url('../img/background-contac-us.jpg') no-repeat;
@@ -166,7 +190,6 @@ p {
 	margin: 10% 0;
 }
 /*---------PAGE PEOPLE---------------*/
-
 .people-description {
 	text-align: justify;
 }
@@ -174,3 +197,9 @@ p {
 #sentient-people img {
 	width: 100%;
 }
+@media screen and (max-width: 480px) {
+    .people-description p {
+    	text-align: center;
+    }
+}
+
